@@ -14,46 +14,46 @@
 
 :root {
 	/* APP ELEMENTS */
-	--app-bg: url(https://i.ibb.co/WNrbr1Yz/Alpine-Amnesia.png);
+	--app-bg: url(https://media.discordapp.net/attachments/1022884262292234312/1553856747771404438/Untitled4_20260917140521.png?ex=6abac55d&is=6ab973dd&hm=bca7eef5d7f0dd673bc22850f0f48c372d385716ea82124d8e00767662c6a1cc&=&format=webp&quality=lossless&width=1536&height=1024);
 	--app-blur: 6px;
 	--app-margin: 24px;
 	--app-radius: 8px;
 
-	/* ACCENT HSL AND TEXT COLOR SETTINGS */
-	--accent-hue: 260;
-    --accent-saturation: 83%;
-    --accent-lightness: 72%;
+	/* ACCENT COLOR: #2B4BA6 */
+	--accent-hue: 224;
+	--accent-saturation: 59%;
+	--accent-lightness: 41%;
 	--accent-opacity: 0.8;
-	--accent-text-color: hsl(0,0%,0%);
+	--accent-text-color: hsl(0,0%,100%);
 
-	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
+	/* SIDEBARS AND CHAT AREA */
 	--sidebar-color: hsl(0,0%,0%,0.34);
 	--main-content-color: hsl(0,0%,0%,0.27);
 
 	/* MESSAGE SETTINGS */
 	--message-color: hsl(0,0%,0%,0.19);
-    --message-color-hover: hsl(0,0%,0%,0.28);
+	--message-color-hover: hsl(0,0%,0%,0.28);
 	--message-radius: 18px;
 	--message-padding-top: 8px;
 	--message-padding-side: 8px;
 
-	/* REPLY HSL COLOR SETTINGS */
-	--reply-hue: 328;
-    --reply-saturation: 79%;
-    --reply-lightness: 64%;
+	/* REPLY COLOR: #2B4BA6 */
+	--reply-hue: 224;
+	--reply-saturation: 59%;
+	--reply-lightness: 41%;
 	--reply-opacity: 1;
 
 	/* TEXTAREA SETTINGS */
 	--textarea-color: 255,255,255;
-    --textarea-alpha: 0.125;
-    --textarea-alpha-focus: 0.165;
+	--textarea-alpha: 0.125;
+	--textarea-alpha-focus: 0.165;
 	--textarea-text-color: hsl(0,0%,100%);
 	--textarea-radius: 28px;
 
 	/* CARD SETTINGS */
 	--card-color: hsl(0,0%,100%,0.14);
-    --card-color-hover: hsl(0,0%,100%,0.18);
-    --card-color-select: hsl(0,0%,100%,0.21);
+	--card-color-hover: hsl(0,0%,100%,0.18);
+	--card-color-select: hsl(0,0%,100%,0.21);
 	--card-radius: 18px;
 
 	/* BUTTON SETTINGS */
@@ -61,24 +61,34 @@
 	--button-padding: 16px;
 	--button-action-color: hsl(0,0%,0%);
 	--button-radius: 16px;
-
+	
 	/* POPOUT SETTINGS */
-    --popout-color: hsl(0,0%,0%,0.46);
-    --popout-blur: 6px;
-    --popout-radius: 18px;
-    --popout-shadow: 0 20px 40px hsl(0,0%,0%,0.44);
-    --popout-shadow-border: inset 0 1px 1px hsl(0,100%,100%,0.35), inset 0 -1px 2px hsl(0,0%,0%,0.25), inset 0 0 0 1px hsl(0,100%,100%,0.04); /* Set this variable to none to remove the popout liquid glass border */
+	--popout-color: hsl(0,0%,0%,0.46);
+	--popout-blur: 6px;
+	--popout-radius: 18px;
+	--popout-shadow: 0 20px 40px hsl(0,0%,0%,0.44);
+	--popout-shadow-border: inset 0 1px 1px hsl(0,100%,100%,0.35), inset 0 -1px 2px hsl(0,0%,0%,0.25), inset 0 0 0 1px hsl(0,100%,100%,0.04);
 
-	/* LIQUID GLASS SETTINGS */
+	/* LIQUID GLASS */
 	--light-angle: 40deg;
 
-	/* Remove the opening and closing comment brackets to remove the liquid glass shadow */
-	/*--liquid-glass-shadow: none;*/
+	/* Force Discord accent variables to blue */
+	--brand-experiment: #2B4BA6;
+	--brand-experiment-100: #2B4BA6;
+	--brand-experiment-200: #2B4BA6;
+	--brand-experiment-300: #2B4BA6;
+	--brand-experiment-400: #2B4BA6;
+	--brand-experiment-500: #2B4BA6;
+	--brand-experiment-600: #2B4BA6;
+	--brand-experiment-700: #2B4BA6;
+	--brand-experiment-800: #2B4BA6;
+	--brand-experiment-900: #2B4BA6;
 }
 
 @supports (color: color-mix(in lch, red, blue)) {
 	.theme-dark {
-		/* TEXT COLOR SETTINGS */
+
+		/* TEXT */
 		--text-primary: hsl(0,0%,100%);
 		--text-secondary: hsl(0,0%,77%);
 		--text-default: hsl(0,0%,86%);
@@ -87,26 +97,64 @@
 		--channel-icon: hsl(0,0%,73%);
 		--text-strong: hsl(0,0%,100%);
 
-		/* ICON COLOR SETTINGS */
-		--icon-primary: hsl(0,0%,96%);
-		--icon-secondary: hsl(0,0%,84%);
-		--icon-tertiary: hsl(0,0%,71%);
+		/* ICONS */
+		--icon-primary: #2B4BA6;
+		--icon-secondary: #2B4BA6;
+		--icon-tertiary: #2B4BA6;
 
-		/* INTERACTIVE COLOR SETTINGS */
-		--interactive-normal: hsl(0,0%,79%);
-		--interactive-hover: hsl(0,0%,91%);
-		--interactive-active: hsl(0,0%,100%);
+		/* INTERACTIVE COLORS */
+		--interactive-normal: #2B4BA6;
+		--interactive-hover: #2B4BA6;
+		--interactive-active: #2B4BA6;
 		--interactive-muted: hsl(0,0%,43%);
 
-		/* BACKGROUND MODIFIER SETTINGS */
+		/* BACKGROUND MODIFIERS */
 		--background-modifier-hover: hsl(0,0%,100%,0.075);
 		--background-modifier-active: hsl(0,0%,100%,0.1);
 		--background-modifier-selected: hsl(0,0%,100%,0.125);
 		--background-modifier-accent: hsl(0,0%,100%,0.175);
 		--background-primary: transparent;
 
-		/* ACCENT COLORED TEXT AND LINK SETTINGS */
-		--text-brand: hsl(var(--accent-hsl));
-		--text-link: hsl(var(--accent-hsl));
+		/* BRAND / LINKS */
+		--text-brand: #2B4BA6;
+		--text-link: #2B4BA6;
+
+		/* DISCORD BRAND COLORS */
+		--brand-100: #2B4BA6;
+		--brand-200: #2B4BA6;
+		--brand-300: #2B4BA6;
+		--brand-400: #2B4BA6;
+		--brand-500: #2B4BA6;
+		--brand-600: #2B4BA6;
+		--brand-700: #2B4BA6;
+		--brand-800: #2B4BA6;
+		--brand-900: #2B4BA6;
+
+		/* FORCE SVG ICON COLORS */
+		svg {
+			--interactive-normal: #2B4BA6;
+			--interactive-hover: #2B4BA6;
+			--interactive-active: #2B4BA6;
+			--icon-primary: #2B4BA6;
+			--icon-secondary: #2B4BA6;
+			--icon-tertiary: #2B4BA6;
+		}
+
+		/* FORCE COMMON ICONS / BUTTONS */
+		button svg,
+		[role="button"] svg,
+		a svg,
+		div[role="button"] svg {
+			color: #2B4BA6 !important;
+			fill: #2B4BA6 !important;
+		}
+
+		/* Discord elements that directly use interactive colors */
+		button,
+		[role="button"] {
+			--interactive-normal: #2B4BA6;
+			--interactive-hover: #2B4BA6;
+			--interactive-active: #2B4BA6;
+		}
 	}
 }
